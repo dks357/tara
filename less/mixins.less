@@ -1,0 +1,29 @@
+// МИКСИН ДЛЯ СОЗДАНИЯ CLEARFIX
+.clearfix() {
+  &::after {
+    content: "";
+    
+    display: table;
+    clear: both;
+  }
+}
+
+// АДАПТИВНЫЙ ЦЕНТРОВЩИК
+.container() {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.no-outline() {
+  outline: none;
+  background: transparent;
+  &::before {
+    display: none;
+  }
+}
+
+.ul-reset() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
