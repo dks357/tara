@@ -1,0 +1,44 @@
+.main-nav {
+	background: rgba(255, 255, 255, 0.7);
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+	&__wrapper {
+		.container();
+		.clearfix();
+		min-height: 105px;
+		text-align: center;
+	}
+
+	&__left {
+		width: 460px;
+		min-height: 105px;
+		float: left;
+		text-align: left;
+	}
+
+	&__right {
+		width: 460px;
+		min-height: 105px;
+		float: right;
+		text-align: right;
+	}
+
+	&__top {
+		min-height: 60px;
+	}
+
+	a {
+		display: inline-block;
+		font-size: 22px;
+		line-height: 28px;
+		color: @color-black;
+		text-decoration: none;
+		padding: 16px 15px;
+		margin: 0;
+	}
+
+	img {
+		margin-top: 15px;
+	}
+}

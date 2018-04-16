@@ -19,10 +19,12 @@ body>*>*>*>* {
 
 body>*::before,
 body>*>*::before,
-body>*>*>*::before {
+body>*>*>*::before,
+body>*>*>*>*::before, {
 	content: attr(class);
 	position: absolute;
-
+	top: 0;
+	left: 0;
 	height: 24px;
 	padding: 2px 5px;
 }

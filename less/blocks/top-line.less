@@ -21,14 +21,19 @@
 	float: right;
 	margin: 0;
 	
-	a{
+	a {
 		display: block;
 		padding: 3px 15px;
 		text-decoration: none;
 		color: #ffffff;
 
 		&:hover {
-			background: #ccc;
+			background: #ffffff;
+			color: #000000;
+		}
+		&:active {
+			color: rgba(0, 0, 0, 0.3);
+			background-color: #ffffff;
 		}
 	}
 
@@ -48,6 +53,10 @@
 			right: -2px;
 			top: 3px;
 			color: #fff;
+		}
+
+		&:last-child::before {
+			content: none;
 		}
 	}
 }
