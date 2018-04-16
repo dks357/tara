@@ -79,19 +79,19 @@
 	<div class="features">
 		<div class="features__wrapper">
 			<div class="features__item">
-				<div class="features__img"></div>
+				<div class="features__img  features__img--range"></div>
 				<p>Широкий ассортимент товаров</p>
 			</div>
 			<div class="features__item">
-				<div class="features__img"></div>
+				<div class="features__img  features__img--package"></div>
 				<p>Изготавливаем упаковку от 1 дня</p>
 			</div>
 			<div class="features__item">
-				<div class="features__img"></div>
+				<div class="features__img  features__img--min"></div>
 				<p>Минимальная партия 500 шт.</p>
 			</div>
 			<div class="features__item">
-				<div class="features__img"></div>
+				<div class="features__img  features__img--delivery"></div>
 				<p>Оперативная и бесплатная доставка</p>
 			</div>
 		</div>
@@ -99,12 +99,24 @@
 	<!-- Каталог продукции -->
 	<section class="index-catalog">
 		<div class="index-catalog__wrapper">
-			<h2>Наша продукция</h2>
-			<p>Наш ассортимент состоит из более ста тысяч видов высококачественных упаковок из безопасного и экологически чистого сырья, пригодной для использования в пищевой промышленности.</p>
-			<div class="index-catalog__menu">
-
+			<div class="section-header">
+				<h2>Наша продукция</h2>
+				<p>Наш ассортимент состоит из более ста тысяч видов высококачественных упаковок из безопасного и экологически чистого сырья, пригодной для использования в пищевой промышленности.</p>
 			</div>
+			<!-- Catalog-menu -->
+			<div class="index-catalog__menu"></div>
+		
 			<div class="catalog-list">
+				<!-- карточка товара -->
+				<div class="catalog-item">
+					<div class="catalog-item__img">
+						<img src="img/item1.jpg" width="198" height="143" alt="">
+					</div>
+					<h3>4-х клапанные коробки</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam doloremque eum totam voluptatibus veniam quaerat quo</p>
+					<a href="#" class="catalog-item__btn btn">Рассчитать</a>
+				</div>
+				<!-- карточка товара -->
 				<div class="catalog-item">
 					<div class="catalog-item__img">
 						<img src="img/item1.jpg" width="198" height="143" alt="">
@@ -129,6 +141,16 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam doloremque eum totam voluptatibus veniam quaerat quo</p>
 					<a href="#" class="catalog-item__btn btn">Рассчитать</a>
 				</div>
+				<!-- карточка товара -->
+				<div class="catalog-item">
+					<div class="catalog-item__img">
+						<img src="img/item1.jpg" width="198" height="143" alt="">
+					</div>
+					<h3>4-х клапанные коробки</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam doloremque eum totam voluptatibus veniam quaerat quo</p>
+					<a href="#" class="catalog-item__btn btn">Рассчитать</a>
+				</div>
+				<!-- карточка товара -->
 				<div class="catalog-item">
 					<div class="catalog-item__img">
 						<img src="img/item1.jpg" width="198" height="143" alt="">
@@ -153,28 +175,86 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam doloremque eum totam voluptatibus veniam quaerat quo</p>
 					<a href="#" class="catalog-item__btn btn">Рассчитать</a>
 				</div>
-				<div class="catalog-item">
-					<div class="catalog-item__img">
-						<img src="img/item1.jpg" width="198" height="143" alt="">
-					</div>
-					<h3>4-х клапанные коробки</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam doloremque eum totam voluptatibus veniam quaerat quo</p>
-					<a href="#" class="catalog-item__btn btn">Рассчитать</a>
-				</div>
-				<div class="catalog-item">
-					<div class="catalog-item__img">
-						<img src="img/item1.jpg" width="198" height="143" alt="">
-					</div>
-					<h3>4-х клапанные коробки</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam doloremque eum totam voluptatibus veniam quaerat quo</p>
-					<a href="#" class="catalog-item__btn btn">Рассчитать</a>
-				</div>
+				<a href="#" class="index-catalog__btn btn">Перейти в каталог</a>
 			</div>
 		</div>
 	</section>
+	<!-- Премиущества -->
+	<section class="advantages">
+		<div class="advantages__wrapper">
+			<div class="section-header">
+				<h2>Премиущества работы с нами</h2>
+			</div>
+		</div>
+	</section>
+	<!-- Этапы работы с нами -->
+	<section class="stages">
+		<div class="stages__wrapper">
+			<div class="section-header">
+				<h2>Этапы работы с нами</h2>
+				<p>Стать нашим клиентом очень просто - для этого достаточно связаться с нашим менеджером, который пройдет с Вами по всем этапам сделки.</p>
+			</div>
+			<ul class="stages__list">
+				<li class="stages__item">
+					<div class="stages__img"></div>
+					<div class="stages__content">
+						<h3>Заявка</h3>
+						<p>Вы оставляете заявку или звоните нам.</p>
+					</div>
+				</li>
+				<li class="stages__item">
+					<div class="stages__img"></div>
+					<div class="stages__content">
+						<h3>Обработка</h3>
+						<p>Мы консультируем Вас и оформляем заказ.</p>
+					</div>
+				</li>
+				<li class="stages__item">
+					<div class="stages__img"></div>
+					<div class="stages__content">
+						<h3>Рассчет</h3>
+						<p>Мы выставляем Вам счет.</p>
+					</div>
+				</li>
+				<li class="stages__item">
+					<div class="stages__img"></div>
+					<div class="stages__content">
+						<h3>Оплата</h3>
+						<p>Оплатить счет можно любым удобным для Вас способом.</p>
+					</div>
+				</li>
+				<li class="stages__item">
+					<div class="stages__img"></div>
+					<div class="stages__content">
+						<h3>Производство</h3>
+						<p>Мы изготавливаем Вашу продукцию.</p>
+					</div>
+				</li>
+				<li class="stages__item">
+					<div class="stages__img"></div>
+					<div class="stages__content">
+						<h3>Доставка</h3>
+						<p>Доставляем Ваш заказ или отгружаем со склада.</p>
+					</div>
+				</li>
+			</ul>
+			<a href="#" class="stages__btn btn">Стать партнером</a>
+		</div>
+	</section>
+	<!-- о нас -->
+	<section class="production">
+		<div class="production__wrapper">
+			<div class="section-header">
+				<h2>Производство картонной упаковки</h2>
+				<img src="img/s1_box.png" width="350" height="240">
+				<p>Стать нашим клиентом очень просто - для этого достаточно связаться с нашим менеджером, который пройдет с Вами по всем этапам сделки. Стать нашим клиентом очень просто - для этого достаточно связаться с нашим менеджером, который пройдет с Вами по всем этапам сделки. Стать нашим клиентом очень просто - для этого достаточно связаться с нашим менеджером, который пройдет с Вами по всем этапам сделки.  Стать нашим клиентом очень просто - для этого достаточно связаться с нашим менеджером, который пройдет с Вами по всем этапам сделки. Стать нашим клиентом очень просто - для этого достаточно связаться с нашим менеджером, который пройдет с Вами по всем этапам сделки.</p>
+			</div>
+			<a href="#" class="production__btn btn">Далее</a>
+		</div>
+	</section>
 	<!--  -->
-	<div class="advantages">
+	<section class="">
 		
-	</div>
+	</section>
 </body>
 </html>

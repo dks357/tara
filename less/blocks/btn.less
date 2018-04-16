@@ -16,8 +16,13 @@
 	outline: none;
 	cursor: pointer;
 
+	-moz-transition: all 0.2s ease;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: 0.2s;
+	-webkit-transition-timing-function: ease;
+
 	&:hover {
-		-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+		-webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+		box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
 	}
 }

@@ -26,6 +26,20 @@ img {
   clip: rect(0, 0, 0, 0);
 }
 /*@import "outlines.less";*/
+.section-header h2 {
+  color: #0099bc;
+  margin: 0;
+  font-size: 45px;
+  line-height: 50px;
+  font-weight: 400;
+}
+.section-header p {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+}
 .btn {
   margin-right: 16px;
   display: inline-block;
@@ -42,10 +56,14 @@ img {
   border: none;
   outline: none;
   cursor: pointer;
+  -moz-transition: all 0.2s ease;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
 }
 .btn:hover {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
 }
 .top-line {
   min-height: 30px;
@@ -78,6 +96,10 @@ img {
   padding: 3px 15px;
   text-decoration: none;
   color: #ffffff;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
 }
 .top-nav a:hover {
   background: #ffffff;
@@ -307,10 +329,21 @@ img {
 }
 .features__img {
   float: left;
-  width: 70px;
+  width: 75px;
   min-height: 60px;
   margin-right: 10px;
-  background: #000;
+}
+.features__img--range {
+  background: url(../../img/assort.png) no-repeat center center;
+}
+.features__img--package {
+  background: url(../../img/calendar.png) no-repeat center center;
+}
+.features__img--min {
+  background: url(../../img/package.png) no-repeat center center;
+}
+.features__img--delivery {
+  background: url(../../img/truck.png) no-repeat center center;
 }
 .features p {
   margin: 6px 0;
@@ -327,24 +360,17 @@ img {
   width: 1140px;
   margin: 0 auto;
   min-height: 600px;
-  padding: 42px 15px;
+  padding: 45px 15px 55px;
 }
 .index-catalog__menu {
   min-height: 45px;
   margin: 25px 0;
 }
-.index-catalog h2 {
-  color: #0099bc;
-  margin: 0;
-  font-size: 45px;
-  line-height: 50px;
-  font-weight: 400;
-}
-.index-catalog p {
-  font-size: 18px;
-  line-height: 24px;
-  padding: 0;
-  margin: 25px 0;
+.index-catalog__btn {
+  padding: 15px 35px;
+  font-size: 22px;
+  margin: 22px auto 10px;
+  background: #0099bc;
 }
 .catalog-list {
   min-height: 600px;
@@ -361,7 +387,7 @@ img {
   overflow: hidden;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.24);
   width: 255px;
-  min-height: 340px;
+  height: 340px;
 }
 .catalog-item:nth-child(4n) {
   margin-right: 0;
@@ -425,4 +451,104 @@ img {
 .catalog-item:hover .catalog-item__btn {
   visibility: visible;
   right: 45px;
+}
+.advantages {
+  min-height: 660px;
+  background: #f6f6f6;
+}
+.advantages__wrapper {
+  box-sizing: border-box;
+  width: 1140px;
+  margin: 0 auto;
+  padding: 45px 15px 55px;
+}
+.stages__wrapper {
+  box-sizing: border-box;
+  width: 1140px;
+  margin: 0 auto;
+  padding: 45px 15px 55px;
+}
+.stages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 45px;
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
+}
+.stages .stages__img {
+  width: 160px;
+  height: 160px;
+  border-radius: 80px;
+  background: #f4f4f4;
+}
+.stages .stages__content {
+  padding: 20px 8px;
+  box-sizing: border-box;
+  width: 160px;
+  height: 120px;
+}
+.stages .stages__content p {
+  margin: 5px 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 18px;
+}
+.stages__item {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Roboto", Arial, sans-serif;
+  color: #363636;
+  font-style: normal;
+  margin-right: 30px;
+  display: inline-block;
+  vertical-align: top;
+  width: 160px;
+  min-height: 280px;
+}
+.stages__item:last-child {
+  margin-right: 0;
+}
+.stages__btn {
+  width: 200px;
+  display: block;
+  margin: 15px auto;
+  padding: 15px 35px;
+  font-size: 22px;
+}
+.stages h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #0099bc;
+}
+.production {
+  background: #f4f4f4;
+}
+.production__wrapper {
+  box-sizing: border-box;
+  width: 1140px;
+  margin: 0 auto;
+  padding: 45px 15px;
+}
+.production__wrapper::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.production__btn {
+  padding: 15px 50px;
+  font-size: 22px;
+}
+.production img {
+  float: right;
+}
+.production p {
+  margin: 50px 0;
+  padding: 0;
+  padding-right: 500px;
+  font-size: 14px;
+  line-height: 18px;
 }
