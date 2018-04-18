@@ -1,5 +1,5 @@
 .advantages {
-	background: #f6f6f6;
+	background: @bg-gray;
 
 	&__wrapper {
 		.container();
@@ -13,7 +13,7 @@
 	}
 	
 	&__item {
-		.font-default();
+		.font-body();
 		display: inline-block;
 		vertical-align: top;
 		margin-right: 30px;
@@ -53,13 +53,11 @@
 		}
 	}
 	&__title {
-		font-size: 22px;
+		.font-title();
 		font-weight: 500;
-		line-height: 28px;
 		text-transform: uppercase;
 	}
 	&__descript {
 		margin-top: 15px;
-		line-height: 20px;
 	}
 }

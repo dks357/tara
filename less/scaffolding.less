@@ -1,11 +1,12 @@
 html, body {
-	min-width: 1140px;
+	min-width: @wrapper-width;
 }
 
 body {
+	.font-body();
 	margin: 0;
-	.font-default();
-	background-color: #fff;
+	background-color: @bg-white;
+	color: color-black;
 }
 
 img {

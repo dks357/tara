@@ -1,10 +1,11 @@
 .page-footer {
 	background: #363636;
 	color: #cacaca;
+	padding: 35px 0 5px;
 
 	&__wrapper {
 		.container();
-		padding: 35px 15px 60px;
+		padding: 0 15px;
 
 	}
 
@@ -20,6 +21,7 @@
 	&__contacts {
 		float: left;
 		margin-right: 150px;
+		margin-top: 15px;
 
 		a {
 			text-decoration: none;
@@ -44,6 +46,7 @@
 	}
 	
 	&__calback {
+		margin-top: 10px;
 		text-transform: uppercase;
 		line-height: 28px;
 		font-size: 18px;
@@ -57,42 +60,9 @@
 			color: @color-blue;
 		}
 	}
-}
 
-.links {
-	display: inline-block;
-	vertical-align: top;
-	width: 198px;
-	.font-default();
-	margin-right: 30px;
-
-	&:last-child {
-		margin-right: 0;
-	}
-	
-	a {
-		.font-default();
-		color: #7f7f7f;
-		text-decoration: none;
-		&:hover {
-			text-decoration: underline;
-			color: @color-blue;
-		}
-	}
-	
-	&__list {
-		.ul-reset();
-		li {
-			margin-top: 5px;
-		}
-	}
-
-	&__title {
-		font-weight: 400;
-
-		a {
-			font-size: 20px;
-			color: #f3f3f3;
-		}
+	&__bottom {
+		.font-caption();
+		margin: 10px 0;
 	}
 }
