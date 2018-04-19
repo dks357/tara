@@ -1,6 +1,6 @@
 .top-line {
 	min-height: 30px;
-	background: @bg-black;
+	background: @black;
 
 	&__wrapper {
 		.container();
@@ -28,7 +28,7 @@
 		display: block;
 		padding: 3px 15px;
 		text-decoration: none;
-		color: #ffffff;
+		color: @white;
 
 		-moz-transition: all 0.3s ease;
 		-webkit-transition-property: all;
@@ -36,8 +36,8 @@
 		-webkit-transition-timing-function: ease;
 
 		&:hover {
-			background: #ffffff;
-			color: @color-black;
+			background: @white;
+			color: @black;
 		}
 		&:active {
 			color: rgba(0, 0, 0, 0.3);
@@ -60,7 +60,7 @@
 			position: absolute;
 			right: -2px;
 			top: 3px;
-			color: #ffffff;
+			color: @white;
 		}
 
 		&:last-child::before {

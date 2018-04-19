@@ -2,7 +2,8 @@
 	display: inline-block;
 	vertical-align: top;
 	width: 198px;
-	.font-default();
+	.font-body();
+	line-height: 22px;
 	margin-right: 30px;
 
 	&:last-child {
@@ -10,12 +11,13 @@
 	}
 	
 	a {
-		.font-default();
-		color: #7f7f7f;
+		.font-body();
+		line-height: 22px;
+		color: #9f9f9f;
 		text-decoration: none;
 		&:hover {
 			text-decoration: underline;
-			color: @color-blue;
+			color: @blue;
 		}
 	}
 	
@@ -28,10 +30,9 @@
 
 	&__title {
 		font-weight: 400;
-
 		a {
 			font-size: 20px;
-			color: #f3f3f3;
+			color: @gray;
 		}
 	}
 }
