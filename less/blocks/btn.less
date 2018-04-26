@@ -1,10 +1,12 @@
 .btn {
-	.font-title();
+	.font-base();
+	
 	display: inline-block;
 	vertical-align: top;
 	padding: 10px 35px;
 
 	text-align: center;
+	text-transform: uppercase;
 	text-decoration: none;
 	color: @white;
 	border: none;
@@ -24,9 +26,22 @@
 
 	&--red {
 		background: @red;
+
+		&:hover {
+			background: @blue;
+		}
+		&:active {
+			background-color: darken(@blue, 15%);
+		}
 	}
 
 	&--blue {
 		background: @blue;
+		&:hover {
+			background: @red;
+		}
+		&:active {
+			background-color: darken(@red, 15%);
+		}
 	}
 }

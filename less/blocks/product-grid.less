@@ -1,0 +1,46 @@
+.product-grid {
+
+  padding: 0 15px 20px;
+  .container();
+  .clearfix();
+
+  &__title {
+    margin-bottom: 20px;
+    padding: 30px 15px;
+    background: @gray;
+
+    h1 {
+      margin: 0;
+      padding: 0;
+      .font-subheader();
+    }
+  }
+
+  &__left{
+  
+    width: 255px;
+    float: left;
+    border-bottom: 1px solid @gray-border;
+  }
+
+  &__list {
+
+    min-height: 30px;
+  }
+
+  &__right {
+
+    float: right;
+    width: 825px;
+  }
+  &__header {
+    min-height: 200px;
+    background: #000;
+  }
+  &__card-wrapper {
+    min-height: 300px;
+    margin-bottom: 30px;
+    font-size: 0;
+    line-height: 0;
+  }
+}

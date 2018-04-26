@@ -1,0 +1,16 @@
+AddDefaultCharset utf-8
+AddCharset utf-8 *
+<IfModule mod_charset.c>
+CharsetSourceEnc utf-8
+CharsetDefault utf-8
+</IfModule>
+Options +FollowSymLinks
+RewriteEngine on
+    RewriteCond %{HTTP_HOST} ^www.tara5.ru$
+    RewriteRule (.*) http://tara5.ru/$1 [R=301,L]
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+    RewriteRule ^index\.html$ http://tara5.ru/ [R=301,L]
+ErrorDocument 404 http://tara5.ru/404.html
+AddHandler application/x-httpd-php .php .html .htm
+
+
